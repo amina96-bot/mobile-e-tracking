@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.dashbord.DeleteFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="321dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        card_view:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="334dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Etes vous sur de vouloir supprimer?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/info_text"
+        android:layout_marginTop="30dp"
+        android:padding="15dp">
+
+
+        <Button
+            android:id="@+id/no_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F66E6E"
+            android:shadowColor="#FFFFFF"
+            android:text="Non" />
+
+        <Button
+            android:id="@+id/yes_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:shadowColor="#FFFFFF"
+            android:text="Oui" />
+    </LinearLayout>
+
+</LinearLayout>

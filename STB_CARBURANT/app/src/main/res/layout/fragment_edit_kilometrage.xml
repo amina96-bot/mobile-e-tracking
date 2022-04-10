@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".ui.dashbord.EditKilometrageFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/demandeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="#EDECEF">
+
+            <ImageView
+                android:id="@+id/adf_img_calendar"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/calendar2"
+                app:layout_column="1"
+                app:layout_gravity="center_vertical"
+                app:layout_row="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Date"
+                    app:layout_column="3"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+                <TextView
+                    android:id="@+id/adf_text_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_column="3"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="#EDECEF">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/kilometrage2"
+                app:layout_column="1"
+                app:layout_gravity="center_vertical"
+                app:layout_row="3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kilométrage"/>
+
+                <EditText
+                    android:id="@+id/editText_kilometrage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="#EDECEF">
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/take_picture"
+                app:layout_column="1"
+                app:layout_gravity="center_vertical"
+                app:layout_row="3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Compteur de kilométrage"
+                    app:layout_column="3"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+
+                <ImageView
+                    android:id="@+id/km_counter_picture_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/odometer"
+                    app:layout_column="3"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="8" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/update_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/save_changes" />
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sauvegarder" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

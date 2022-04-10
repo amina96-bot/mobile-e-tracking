@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">E_Tracking</string>
+    <string name="user_label">Nom d\'utilisateur:</string>
+    <string name="edit1"></string>
+    <string name="password_label">Mot de passe:</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">StarBrands Recharge Carburant</string>
+    <string name="nav_header_subtitle">it@starbrandsspa.com / 0770786124</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallerie</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_history">Historique</string>
+    <string name="menu_parametre">Paramètres</string>
+    <string name="menu_dashboard">Tableau de bord</string>
+    <string name="menu_vehicles">Véhicules</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_picker">Button</string>
+    <string name="title_activity_tableau_bord">TableauBord</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_tableaubord">TableaubordActivity</string>
+
+</resources>

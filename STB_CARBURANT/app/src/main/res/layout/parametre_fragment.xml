@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_parameter"
+    tools:context=".ui.parametre.ParametreFragment">
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="Server:"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextAddress"
+        app:layout_constraintEnd_toStartOf="@+id/editTextAddress"
+        app:layout_constraintTop_toTopOf="@+id/editTextAddress" />
+
+    <ImageButton
+        android:id="@+id/UploadButton"
+        android:layout_width="72dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/upload_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+    <ImageButton
+        android:id="@+id/DownloadButton"
+        android:layout_width="74dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/dowload_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UploadButton" />
+
+    <ImageButton
+        android:id="@+id/UpdateButton"
+        android:layout_width="82dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="2dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DownloadButton" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="SAVE"
+        app:layout_constraintStart_toEndOf="@+id/editTextAddress"
+        app:layout_constraintTop_toTopOf="@+id/editTextAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

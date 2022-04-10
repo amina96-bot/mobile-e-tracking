@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_dashbaord">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.starbrands.stb_carburant.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.starbrands.stb_carburant.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.starbrands.stb_carburant.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.starbrands.stb_carburant.ui.history.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/history_fragment" />
+    <fragment
+        android:id="@+id/nav_dashbaord"
+        android:name="com.starbrands.stb_carburant.ui.dashbord.DashbordFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/dashbord_fragment" />
+    <fragment
+        android:id="@+id/nav_parametre"
+        android:name="com.starbrands.stb_carburant.ui.parametre.ParametreFragment"
+        android:label="@string/menu_parametre"
+        tools:layout="@layout/parametre_fragment" />
+    <fragment
+        android:id="@+id/nav_vehicles"
+        android:name="com.starbrands.stb_carburant.ui.switch_vehicles.SwitchVehiclesFragment"
+        android:label="@string/menu_vehicles"
+        tools:layout="@layout/fragment_switch_vehicles" />
+    <fragment
+        android:id="@+id/addFuelFragment"
+        android:name="com.starbrands.stb_carburant.ui.fuel.AddFuelFragment"
+        android:label="fragment_add_fuel"
+        tools:layout="@layout/fragment_add_fuel" />
+</navigation>

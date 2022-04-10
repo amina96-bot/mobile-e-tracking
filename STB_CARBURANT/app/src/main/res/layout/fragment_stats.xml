@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F4EEEE"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StatsTabTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#6E6B6B"
+                        android:text="Statistiques générales"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="#CCC"
+                    android:paddingTop="1dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="209dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Trajets"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab11"
+                            android:layout_width="204dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:textColor="#81838A"
+                            android:textSize="18dp"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Pleins"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textColor="#81838A"
+                            android:textSize="18dp"
+
+                            android:background="#FFF"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Kilométrage parcouru"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab13"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:padding="18dip"
+                            android:textColor="#81838A"
+                            android:textSize="18dp"
+
+                            android:background="#FFF"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Qtée de carburant/L"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab14"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:textColor="#81838A"
+
+                            android:textSize="18dp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F4EEEE"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StatsTabTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#8BC34A"
+                        android:text="Statistiques de kilométrage"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="#CCC"
+                    android:paddingTop="1dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="210dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Kilométrage initial"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab41"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Dernier relevé kilométrique"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab42"
+                            android:layout_width="143dp"
+
+                            android:layout_height="match_parent"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F4EEEE"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StatsTabTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#AC4444"
+                        android:text="Statistiques de carburant"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="#CCC"
+                    android:paddingTop="1dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Coût total"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab22"
+                            android:layout_width="66dp"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Coût moyen"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tab23"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Prix moyen /L"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tab24"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Consommation moy L/100Km"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tab25"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Distance moy entre pleins"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="127dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tab26"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Qtée moy des pleins"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Coût carburant /Km"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tab28"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Coût carburant /Jour"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tab29"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+<!--                    <TableRow-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#CCC"-->
+<!--                        android:paddingRight="1dp"-->
+<!--                        android:paddingBottom="1dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                           -->
+<!--                            android:background="#FFF"-->
+<!--                            android:padding="18dip"-->
+<!--                            android:text="Coût du carburant/mois (DA)"-->
+<!--                            android:textColor="#81838A"-->
+<!--                            android:textSize="18dp" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:id="@+id/tab210"-->
+<!--                            android:background="#FFF"-->
+<!--                            android:padding="18dip"-->
+
+<!--                            android:textColor="#81838A"-->
+<!--                            android:textSize="18dp" />-->
+
+<!--                    </TableRow>-->
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Paiements carte Naftal"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab211"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="match_parent"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="258dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Paiements bons carburant"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab212"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="match_parent"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Paiements en espèce"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab213"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="match_parent"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F4EEEE"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/StatsTabTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#FF6F00"
+                        android:text="Statistiques de trajet"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="#CCC"
+                    android:paddingTop="1dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="210dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Nb trajets effectués"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab31"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Distance parcourue"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab32"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Distance motif travail"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab33"
+                            android:layout_width="127dp"
+                            android:layout_height="match_parent"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Distance motif mission"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab34"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="match_parent"
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCC"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+                            android:text="Distance motif personnel"
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tab35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:background="#FFF"
+                            android:padding="18dip"
+
+                            android:textColor="#81838A"
+                            android:textSize="18dp" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

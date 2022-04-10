@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".ui.trajet.TrajetFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <LinearLayout
+                android:id="@+id/linearLayout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Démarrer un nouveau trajet"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:padding="15dp">
+
+                    <ImageButton
+                        android:id="@+id/nouveau_trajet"
+                        android:layout_width="97dp"
+                        android:layout_height="83dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/nv_trajet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Nouveau trajet" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Veuillez choisir le motif de votre déplacement:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    tools:ignore="MissingConstraints" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxTravail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travail" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxMission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mission" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxPersonnel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personnel" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:background="#EDECEF">
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/kilometrage2"
+                    app:layout_column="1"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:text="Kilométrage départ"
+                        app:layout_column="3"
+                        app:layout_gravity="center_vertical"
+                        app:layout_row="3" />
+
+                    <EditText
+                        android:id="@+id/editText_kilometrage_depart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Km"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp"
+                        app:layout_column="3"
+                        app:layout_gravity="center_vertical"
+                        app:layout_row="3" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:background="#EDECEF">
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/location5"
+                    app:layout_column="1"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:text="Lieu départ"
+                        app:layout_column="3"
+                        app:layout_gravity="center_vertical"
+                        app:layout_row="3" />
+
+                    <EditText
+                        android:id="@+id/editText_lieu_depart"
+                        android:layout_width="303dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="..."
+                        android:inputType="text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:background="#EDECEF">
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/notes"
+                    app:layout_column="1"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:text="Commentaire"
+                        app:layout_column="3"
+                        app:layout_gravity="center_vertical"
+                        app:layout_row="3" />
+
+                    <EditText
+                        android:id="@+id/notes"
+                        android:layout_width="303dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="..."
+                        android:inputType="text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:padding="15dp">
+
+                    <ImageButton
+                        android:id="@+id/save_button3"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/jouer" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Démarrer trajet" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Saisir un trajet déjà terminé"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:padding="15dp">
+
+                    <ImageButton
+                        android:id="@+id/old_trajet"
+                        android:layout_width="80dp"
+                        android:layout_height="67dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/old_trajet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Trajet terminé" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

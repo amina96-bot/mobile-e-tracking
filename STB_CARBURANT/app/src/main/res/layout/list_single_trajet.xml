@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow android:layout_height="147dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_trajet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_date_depart"
+                style="@style/StatsTabTitle"
+                android:layout_width="158dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/txt_kilometrage_depart"
+                style="@style/StatsTabTitle"
+                android:layout_width="158dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ACACAC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="215dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_date_arrivee"
+                style="@style/StatsTabTitle"
+                android:layout_width="204dp"
+                android:layout_height="50dp"
+                 />
+
+            <TextView
+                android:id="@+id/txt_kilometrage_arrivee"
+                style="@style/StatsTabTitle"
+                android:layout_width="204dp"
+                android:layout_height="50dp"
+                android:textColor="#ACACAC" />
+        </LinearLayout>
+
+    </TableRow>
+</TableLayout>

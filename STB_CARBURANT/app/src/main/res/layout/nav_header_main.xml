@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/car3" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/user_login_header"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textAlignment="center"-->
+<!--        android:hint="Utilisateur"-->
+<!--        android:paddingTop="@dimen/nav_header_vertical_spacing" />-->
+
+    <TextView
+        android:id="@+id/user_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Utilisateur"
+        android:paddingTop="@dimen/nav_header_vertical_spacing" />
+
+    <TextView
+        android:id="@+id/vehicule_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Immatriculation" />
+
+</LinearLayout>

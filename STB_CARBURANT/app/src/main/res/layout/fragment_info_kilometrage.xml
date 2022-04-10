@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".ui.dashbord.InfoKilometrageFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/demandeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/demandeMontantRecharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/demandeMotifRefus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="#EDECEF">
+
+            <ImageView
+                android:id="@+id/adf_img_calendar2"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/calendar2"
+                app:layout_column="1"
+                app:layout_gravity="center_vertical"
+                app:layout_row="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    app:layout_column="3"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_column="3"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="#EDECEF">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/kilometrage2"
+                app:layout_column="1"
+                app:layout_gravity="center_vertical"
+                app:layout_row="3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Kilométrage"
+                    app:layout_column="3"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+
+                <TextView
+                    android:id="@+id/kilometrage"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="14sp"
+                    app:layout_column="3"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="#EDECEF">
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/odometer"
+                app:layout_column="1"
+                app:layout_gravity="center_vertical"
+                app:layout_row="3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Compteur de kilométrage"
+                    app:layout_column="3"
+                    app:layout_gravity="center_vertical"
+                    app:layout_row="3" />
+
+                <ImageView
+                    android:id="@+id/picture_km_counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="15dp">
+
+
+            <!--            <Button-->
+            <!--                android:id="@+id/delete_button"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:shadowColor="#FFFFFF"-->
+            <!--                android:layout_marginRight="100dp"-->
+            <!--                android:backgroundTint="#F66E6E"-->
+            <!--                android:text="Supprimer" />-->
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:shadowColor="#FFFFFF"
+                android:backgroundTint="@color/teal_700"
+                android:text="Modifier" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
